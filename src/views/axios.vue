@@ -1,14 +1,14 @@
 <template>
-  <div></div>
+  <div>111</div>
 </template>
 <script lang="ts">
 import { defineComponent } from 'vue'
 import Axios from '@/utils/axios'
 
 export default defineComponent({
-  setup () {
-    Axios
-      .get('/users/XPoet')
+  name: 'AxiosPage',
+  setup() {
+    Axios.get('/users/XPoet')
       .then((res) => {
         console.log('res: ', res)
       })
